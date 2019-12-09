@@ -1,0 +1,38 @@
+
+/////////////////////////////////////////////   GENERAR COMPONENTES ////////////////////////////////////
+generar controller para el login
+    ng g c login --spec=false -is
+
+generar controller 404
+
+    ng g c nopagefound --spec=false -is
+
+generar controller dashboard
+
+    ng g c pages/dashboard --spec=false -is
+
+generar controller progress
+
+    ng g c pages/progress --spec=false -is
+
+generar controller graficas1
+
+    ng g c pages/progress --spec=false -is
+
+generar controller header
+    ng g c shared/header --spec=false -is
+
+generar controller sidebar
+    ng g c shared/sidebar --spec=false -is
+
+generar controller header
+    ng g c shared/breadcrumbs --spec=false -is
+
+generar controller pages
+    ng g c pages/pages --flat -is --spec=false
+
+/////////////////////////////////////////////   GENERAR SERVICIOS ////////////////////////////////////
+
+ng g s shared --spec=false
+
+ng g s sidebar --spec=false
