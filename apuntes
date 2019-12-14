@@ -31,8 +31,19 @@ generar controller header
 generar controller pages
     ng g c pages/pages --flat -is --spec=false
 
+de funcionalidades
+
+ng g c components/graficoDona -is --spec=false --skip-import
 /////////////////////////////////////////////   GENERAR SERVICIOS ////////////////////////////////////
 
 ng g s shared --spec=false
 
 ng g s sidebar --spec=false
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+FormsModule => [(ngModel)]="progreso"
+
+[leyenda]="" | asocia a alguna variable, numero 
+leyenda=""  | asocia a un string
