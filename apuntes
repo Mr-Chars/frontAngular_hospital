@@ -34,6 +34,10 @@ generar controller pages
 de funcionalidades
 
 ng g c components/graficoDona -is --spec=false --skip-import
+
+*******
+
+ng g c pages/accountSettings -m="pages/pages.module.ts" --spec=false -is
 /////////////////////////////////////////////   GENERAR SERVICIOS ////////////////////////////////////
 
 ng g s shared --spec=false
