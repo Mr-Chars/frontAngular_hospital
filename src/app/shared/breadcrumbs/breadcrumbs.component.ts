@@ -22,8 +22,14 @@ export class BreadcrumbsComponent implements OnInit {
         this.titulo=data.titulo;
         console.log("1===> "+this.titulo);
         this.title.setTitle(this.titulo);
-        console.log("2===> "+this.titulo);
-        this.set_meta(this.titulo);
+
+        let metaTag: MetaDefinition = {
+          name: 'description',
+          content: this.titulo
+        };
+
+        this.meta.updateTag(metaTag);
+        
       });
       
       
