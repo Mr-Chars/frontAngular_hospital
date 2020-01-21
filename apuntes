@@ -58,3 +58,5 @@ FormsModule => [(ngModel)]="progreso"
 
 [leyenda]="" | asocia a alguna variable, numero 
 leyenda=""  | asocia a un string
+
+--flat es para que lo cree en el mismo nivel osea no cree una carpeta si no de frente
