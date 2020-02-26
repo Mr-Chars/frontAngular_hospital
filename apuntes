@@ -61,4 +61,4 @@ leyenda=""  | asocia a un string
 
 --flat es para que lo cree en el mismo nivel osea no cree una carpeta si no de frente
 
-skipTests
+--skipTests=false
