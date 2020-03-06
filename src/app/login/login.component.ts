@@ -77,15 +77,24 @@ export class LoginComponent implements OnInit {
     }
 
     let usuario = new Usuario(null,forma.value.email, forma.value.password);
+
+    
     this._usuarioService.buscarUsuario(usuario).
     subscribe((response) => {
-
-      usuario.nombre=response.nombre;
-      usuario.role=response.role;
-      usuario._id=response._id;
       
-      this._usuarioService.login(usuario, forma.value.recuerdame)
-                    .subscribe(correcto => this.router.navigate(["/dashboard"]));
+
+      if(response)
+      {
+        usuario.nombre=response.nombre;
+        usuario.role=response.role;
+        usuario._id=response._id;
+        
+        this._usuarioService.login(usuario, forma.value.recuerdame)
+                      .subscribe(correcto => this.router.navigate(["/dashboard"]));
+      }
+
+      return;
+      
      });
      
      

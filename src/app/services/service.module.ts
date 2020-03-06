@@ -12,6 +12,7 @@ import {
   MedicoService,
   HospitalService } from './service.index';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
+import { AdminGuard } from './guards/admin.guard';
 
 
 
@@ -26,6 +27,7 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     SidebarService,
     SharedService,
     UsuarioService,
+    AdminGuard,
     LoginGuardGuard,
     SubirArchivoService,
     ModalUploadService,
